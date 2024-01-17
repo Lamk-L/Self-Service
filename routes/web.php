@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\compras\CompraController;
 use App\Http\Controllers\compras\GrupoController;
 use App\Http\Controllers\compras\MarcaController;
 use App\Http\Controllers\compras\ProductoController;
@@ -53,3 +54,7 @@ Route::get('producto/{id}/confirmar',[ProductoController::class,'confirmar'])->n
 Route::get('cancelarcp',function(){
     return redirect()->route('producto.index')->with('datos','Acción Cancelada ...!');
 })->name('cancelarcp');
+
+Route::resource('comprar',CompraController::class);
+
+
