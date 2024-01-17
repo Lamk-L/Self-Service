@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>PUEBA DE INDEX</title>
+    <title>Self-Service</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="build/css/tailwind.css" />
+    <link rel="stylesheet" href="../build/css/tailwind.css" />
     <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.5.x/dist/component.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
   </head>
@@ -29,7 +29,7 @@
             <!-- Sidebar links -->
             <nav aria-label="Main" class="flex-1 px-2 py-4 space-y-2 overflow-y-hidden hover:overflow-y-auto">
               <!-- Dashboards links -->
-              <div x-data="{ isActive: true, open: true}">
+              <div x-data="{ isActive: false, open: false}">
                 <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
                 <a
                   href="#"
@@ -75,9 +75,9 @@
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a
-                    href="index.html"
+                    href="../index.html"
                     role="menuitem"
-                    class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
+                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
                   >
                     Default
                   </a>
@@ -122,11 +122,11 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                        d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
                       />
                     </svg>
                   </span>
-                  <span class="ml-2 text-sm"> Components </span>
+                  <span class="ml-2 text-sm"> Compras </span>
                   <span aria-hidden="true" class="ml-auto">
                     <!-- active class 'rotate-180' -->
                     <svg
@@ -158,46 +158,11 @@
                   >
                     Buttons (soon)
                   </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Cards (soon)
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Dropdowns (soon)
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Forms (soon)
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Lists (soon)
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Modals (soon)
-                  </a>
                 </div>
               </div>
 
               <!-- Pages links -->
-              <div x-data="{ isActive: false, open: false }">
+              <div x-data="{ isActive: true, open: true }">
                 <!-- active classes 'bg-primary-100 dark:bg-primary' -->
                 <a
                   href="#"
@@ -220,11 +185,11 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                       />
                     </svg>
                   </span>
-                  <span class="ml-2 text-sm"> Pages </span>
+                  <span class="ml-2 text-sm"> Calidad </span>
                   <span aria-hidden="true" class="ml-auto">
                     <!-- active class 'rotate-180' -->
                     <svg
@@ -243,53 +208,18 @@
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a
-                    href="pages/blank.html"
+                    href="../pages/blank.html"
                     role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
+                    class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
                   >
                     Blank
                   </a>
                   <a
-                    href="pages/404.html"
+                    href="../pages/404.html"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
                   >
                     404
-                  </a>
-                  <a
-                    href="pages/500.html"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                  >
-                    500
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                  >
-                    Profile (soon)
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Pricing (soon)
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Kanban (soon)
-                  </a>
-                  <a
-                    href="#"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                  >
-                    Feed (soon)
                   </a>
                 </div>
               </div>
@@ -341,102 +271,32 @@
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a
-                    href="auth/register.html"
+                    href="../auth/register.html"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
                     Register
                   </a>
                   <a
-                    href="auth/login.html"
+                    href="../auth/login.html"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
                     Login
                   </a>
                   <a
-                    href="auth/forgot-password.html"
+                    href="../auth/forgot-password.html"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
                     Forgot Password
                   </a>
                   <a
-                    href="auth/reset-password.html"
+                    href="../auth/reset-password.html"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                   >
                     Reset Password
-                  </a>
-                </div>
-              </div>
-
-              <!-- Layouts links -->
-              <div x-data="{ isActive: false, open: false}">
-                <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                <a
-                  href="#"
-                  @click="$event.preventDefault(); open = !open"
-                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
-                  :class="{'bg-primary-100 dark:bg-primary': isActive || open}"
-                  role="button"
-                  aria-haspopup="true"
-                  :aria-expanded="(open || isActive) ? 'true' : 'false'"
-                >
-                  <span aria-hidden="true">
-                    <svg
-                      class="w-5 h-5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-                      />
-                    </svg>
-                  </span>
-                  <span class="ml-2 text-sm"> Layouts </span>
-                  <span aria-hidden="true" class="ml-auto">
-                    <!-- active class 'rotate-180' -->
-                    <svg
-                      class="w-4 h-4 transition-transform transform"
-                      :class="{ 'rotate-180': open }"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </span>
-                </a>
-                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" aria-label="Layouts">
-                  <!-- active & hover classes 'text-gray-700 dark:text-light' -->
-                  <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                  <a
-                    href="layouts/two-columns-sidebar.html"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                  >
-                    Two Columns Sidebar
-                  </a>
-                  <a
-                    href="layouts/mini-plus-one-columns-sidebar.html"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                  >
-                    Mini + One Columns Sidebar
-                  </a>
-                  <a
-                    href="layouts/mini-column-sidebar.html"
-                    role="menuitem"
-                    class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                  >
-                    Mini Column Sidebar
                   </a>
                 </div>
               </div>
@@ -471,9 +331,9 @@
           </div>
         </aside>
 
-        <div class="flex-1 h-full overflow-x-hidden overflow-y-auto">
+        <div class="flex flex-col flex-1 min-h-screen overflow-x-hidden overflow-y-auto">
           <!-- Navbar -->
-          <header class="relative bg-white dark:bg-darker">
+          <header class="relative flex-shrink-0 bg-white dark:bg-darker">
             <div class="flex items-center justify-between p-2 border-b dark:border-primary-darker">
               <!-- Mobile menu button -->
               <button
@@ -496,10 +356,10 @@
 
               <!-- Brand -->
               <a
-                href="index.html"
+                href="#"
                 class="inline-block text-2xl font-bold tracking-wider uppercase text-primary-dark dark:text-light"
               >
-                K-WD
+                HOMA
               </a>
 
               <!-- Mobile sub menu button -->
@@ -655,7 +515,7 @@
                     class="transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="build/images/avatar.jpg" alt="Ahmed Kamel" />
+                    <img class="w-10 h-10 rounded-full" src="../build/images/avatar.jpg" alt="Ahmed Kamel" />
                   </button>
 
                   <!-- User dropdown menu -->
@@ -842,7 +702,7 @@
                     class="block transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="build/images/avatar.jpg" alt="Ahmed Kamel" />
+                    <img class="w-10 h-10 rounded-full" src="../build/images/avatar.jpg" alt="Ahmed Kamel" />
                   </button>
 
                   <!-- User dropdown menu -->
@@ -893,7 +753,7 @@
             >
               <nav aria-label="Main" class="px-2 py-4 space-y-2">
                 <!-- Dashboards links -->
-                <div x-data="{ isActive: true, open: true}">
+                <div x-data="{ isActive: false, open: false}">
                   <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
                   <a
                     href="#"
@@ -939,9 +799,9 @@
                     <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                     <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                     <a
-                      href="index.html"
+                      href="../index.html"
                       role="menuitem"
-                      class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
+                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
                     >
                       Default
                     </a>
@@ -986,11 +846,11 @@
                           stroke-linecap="round"
                           stroke-linejoin="round"
                           stroke-width="2"
-                          d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                          d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
                         />
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm"> Components </span>
+                    <span class="ml-2 text-sm"> Compras </span>
                     <span aria-hidden="true" class="ml-auto">
                       <!-- active class 'rotate-180' -->
                       <svg
@@ -1022,46 +882,11 @@
                     >
                       Buttons (soon)
                     </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Cards (soon)
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Dropdowns (soon)
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Forms (soon)
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Lists (soon)
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Modals (soon)
-                    </a>
                   </div>
                 </div>
 
                 <!-- Pages links -->
-                <div x-data="{ isActive: false, open: false }">
+                <div x-data="{ isActive: true, open: true }">
                   <!-- active classes 'bg-primary-100 dark:bg-primary' -->
                   <a
                     href="#"
@@ -1084,11 +909,11 @@
                           stroke-linecap="round"
                           stroke-linejoin="round"
                           stroke-width="2"
-                          d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                         />
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm"> Pages </span>
+                    <span class="ml-2 text-sm"> Calidad </span>
                     <span aria-hidden="true" class="ml-auto">
                       <!-- active class 'rotate-180' -->
                       <svg
@@ -1107,53 +932,18 @@
                     <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                     <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                     <a
-                      href="pages/blank.html"
+                      href="../pages/blank.html"
                       role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
+                      class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
                     >
                       Blank
                     </a>
                     <a
-                      href="pages/404.html"
+                      href="../pages/404.html"
                       role="menuitem"
                       class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
                     >
                       404
-                    </a>
-                    <a
-                      href="pages/500.html"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                    >
-                      500
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                    >
-                      Profile (soon)
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Pricing (soon)
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Kanban (soon)
-                    </a>
-                    <a
-                      href="#"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
-                    >
-                      Feed (soon)
                     </a>
                   </div>
                 </div>
@@ -1205,102 +995,32 @@
                     <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                     <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                     <a
-                      href="auth/register.html"
+                      href="../auth/register.html"
                       role="menuitem"
                       class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                     >
                       Register
                     </a>
                     <a
-                      href="auth/login.html"
+                      href="../auth/login.html"
                       role="menuitem"
                       class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                     >
                       Login
                     </a>
                     <a
-                      href="auth/forgot-password.html"
+                      href="../auth/forgot-password.html"
                       role="menuitem"
                       class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                     >
                       Forgot Password
                     </a>
                     <a
-                      href="auth/reset-password.html"
+                      href="../auth/reset-password.html"
                       role="menuitem"
                       class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700"
                     >
                       Reset Password
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Layouts links -->
-                <div x-data="{ isActive: false, open: false}">
-                  <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                  <a
-                    href="#"
-                    @click="$event.preventDefault(); open = !open"
-                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
-                    :class="{'bg-primary-100 dark:bg-primary': isActive || open}"
-                    role="button"
-                    aria-haspopup="true"
-                    :aria-expanded="(open || isActive) ? 'true' : 'false'"
-                  >
-                    <span aria-hidden="true">
-                      <svg
-                        class="w-5 h-5"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-                        />
-                      </svg>
-                    </span>
-                    <span class="ml-2 text-sm"> Layouts </span>
-                    <span aria-hidden="true" class="ml-auto">
-                      <!-- active class 'rotate-180' -->
-                      <svg
-                        class="w-4 h-4 transition-transform transform"
-                        :class="{ 'rotate-180': open }"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </span>
-                  </a>
-                  <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" aria-label="Layouts">
-                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
-                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                    <a
-                      href="layouts/two-columns-sidebar.html"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                    >
-                      Two Columns Sidebar
-                    </a>
-                    <a
-                      href="layouts/mini-plus-one-columns-sidebar.html"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                    >
-                      Mini + One Columns Sidebar
-                    </a>
-                    <a
-                      href="layouts/mini-column-sidebar.html"
-                      role="menuitem"
-                      class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700"
-                    >
-                      Mini Column Sidebar
                     </a>
                   </div>
                 </div>
@@ -1309,274 +1029,15 @@
           </header>
 
           <!-- Main content -->
-          <main>
-            <!-- Content header -->
-            <div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
-              <h1 class="text-2xl font-semibold">Dashboard</h1>
-              <a
-                href="https://github.com/Kamona-WD/kwd-dashboard"
-                target="_blank"
-                class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark"
-              >
-                View on github
-              </a>
-            </div>
-
-            <!-- Content -->
-            <div class="mt-2">
-              <!-- State cards -->
-              <div class="grid grid-cols-1 gap-8 p-4 lg:grid-cols-2 xl:grid-cols-4">
-                <!-- Value card -->
-                <div class="flex items-center justify-between p-4 bg-white rounded-md dark:bg-darker">
-                  <div>
-                    <h6
-                      class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light"
-                    >
-                      Value
-                    </h6>
-                    <span class="text-xl font-semibold">$30,000</span>
-                    <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                      +4.4%
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      <svg
-                        class="w-12 h-12 text-gray-300 dark:text-primary-dark"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-
-                <!-- Users card -->
-                <div class="flex items-center justify-between p-4 bg-white rounded-md dark:bg-darker">
-                  <div>
-                    <h6
-                      class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light"
-                    >
-                      Users
-                    </h6>
-                    <span class="text-xl font-semibold">50,021</span>
-                    <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                      +2.6%
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      <svg
-                        class="w-12 h-12 text-gray-300 dark:text-primary-dark"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-
-                <!-- Orders card -->
-                <div class="flex items-center justify-between p-4 bg-white rounded-md dark:bg-darker">
-                  <div>
-                    <h6
-                      class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light"
-                    >
-                      Orders
-                    </h6>
-                    <span class="text-xl font-semibold">45,021</span>
-                    <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                      +3.1%
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      <svg
-                        class="w-12 h-12 text-gray-300 dark:text-primary-dark"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-
-                <!-- Tickets card -->
-                <div class="flex items-center justify-between p-4 bg-white rounded-md dark:bg-darker">
-                  <div>
-                    <h6
-                      class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light"
-                    >
-                      Tickets
-                    </h6>
-                    <span class="text-xl font-semibold">20,516</span>
-                    <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                      +3.1%
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      <svg
-                        class="w-12 h-12 text-gray-300 dark:text-primary-dark"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Charts -->
-              <div class="grid grid-cols-1 p-4 space-y-8 lg:gap-8 lg:space-y-0 lg:grid-cols-3">
-                <!-- Bar chart card -->
-                <div class="col-span-2 bg-white rounded-md dark:bg-darker" x-data="{ isOn: false }">
-                  <!-- Card header -->
-                  <div class="flex items-center justify-between p-4 border-b dark:border-primary">
-                    <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Bar Chart</h4>
-                    <div class="flex items-center space-x-2">
-                      <span class="text-sm text-gray-500 dark:text-light">Last year</span>
-                      <button
-                        class="relative focus:outline-none"
-                        x-cloak
-                        @click="isOn = !isOn; $parent.updateBarChart(isOn)"
-                      >
-                        <div
-                          class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
-                        ></div>
-                        <div
-                          class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform scale-110 rounded-full shadow-sm"
-                          :class="{ 'translate-x-0  bg-white dark:bg-primary-100': !isOn, 'translate-x-6 bg-primary-light dark:bg-primary': isOn }"
-                        ></div>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- Chart -->
-                  <div class="relative p-4 h-72">
-                    <canvas id="barChart"></canvas>
-                  </div>
-                </div>
-
-                <!-- Doughnut chart card -->
-                <div class="bg-white rounded-md dark:bg-darker" x-data="{ isOn: false }">
-                  <!-- Card header -->
-                  <div class="flex items-center justify-between p-4 border-b dark:border-primary">
-                    <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Doughnut Chart</h4>
-                    <div class="flex items-center">
-                      <button
-                        class="relative focus:outline-none"
-                        x-cloak
-                        @click="isOn = !isOn; $parent.updateDoughnutChart(isOn)"
-                      >
-                        <div
-                          class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
-                        ></div>
-                        <div
-                          class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform scale-110 rounded-full shadow-sm"
-                          :class="{ 'translate-x-0  bg-white dark:bg-primary-100': !isOn, 'translate-x-6 bg-primary-light dark:bg-primary': isOn }"
-                        ></div>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- Chart -->
-                  <div class="relative p-4 h-72">
-                    <canvas id="doughnutChart"></canvas>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Two grid columns -->
-              <div class="grid grid-cols-1 p-4 space-y-8 lg:gap-8 lg:space-y-0 lg:grid-cols-3">
-                <!-- Active users chart -->
-                <div class="col-span-1 bg-white rounded-md dark:bg-darker">
-                  <!-- Card header -->
-                  <div class="p-4 border-b dark:border-primary">
-                    <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Active users right now</h4>
-                  </div>
-                  <p class="p-4">
-                    <span class="text-2xl font-medium text-gray-500 dark:text-light" id="usersCount">0</span>
-                    <span class="text-sm font-medium text-gray-500 dark:text-primary">Users</span>
-                  </p>
-                  <!-- Chart -->
-                  <div class="relative p-4">
-                    <canvas id="activeUsersChart"></canvas>
-                  </div>
-                </div>
-
-                <!-- Line chart card -->
-                <div class="col-span-2 bg-white rounded-md dark:bg-darker" x-data="{ isOn: false }">
-                  <!-- Card header -->
-                  <div class="flex items-center justify-between p-4 border-b dark:border-primary">
-                    <h4 class="text-lg font-semibold text-gray-500 dark:text-light">Line Chart</h4>
-                    <div class="flex items-center">
-                      <button
-                        class="relative focus:outline-none"
-                        x-cloak
-                        @click="isOn = !isOn; $parent.updateLineChart()"
-                      >
-                        <div
-                          class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-darker"
-                        ></div>
-                        <div
-                          class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform scale-110 rounded-full shadow-sm"
-                          :class="{ 'translate-x-0  bg-white dark:bg-primary-100': !isOn, 'translate-x-6 bg-primary-light dark:bg-primary': isOn }"
-                        ></div>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- Chart -->
-                  <div class="relative p-4 h-72">
-                    <canvas id="lineChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main>
-
-          <!-- Main footer -->
-          <footer
-            class="flex items-center justify-between p-4 bg-white border-t dark:bg-darker dark:border-primary-darker"
-          >
-            <div>K-WD &copy; 2021</div>
-            <div>
-              Made by
-              <a href="https://github.com/Kamona-WD" target="_blank" class="text-blue-500 hover:underline"
-                >Ahmed Kamel</a
-              >
-            </div>
-          </footer>
+          <div class="flex justify-center flex-1 h-full p-4">
+            <main class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2"> <!-- Ajusta los valores de ancho según tus necesidades -->
+                <h1 class="text-3xl font-semibold">
+                    <section class="content">
+                        @yield('contenido')
+                    </section>
+                </h1>
+            </main>
+          </div>
         </div>
 
         <!-- Panels -->
@@ -1825,204 +1286,18 @@
             <div class="flex-1 pt-4 overflow-y-hidden hover:overflow-y-auto">
               <!-- Action tab -->
               <div class="space-y-4" x-show.transition.in="activeTabe == 'action'">
-                <a href="#" class="block">
-                  <div class="flex px-4 space-x-4">
-                    <div class="relative flex-shrink-0">
-                      <span
-                        class="z-10 inline-block p-2 overflow-visible rounded-full bg-primary-50 text-primary-light dark:bg-primary-darker"
-                      >
-                        <svg
-                          class="w-7 h-7"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                          />
-                        </svg>
-                      </span>
-                      <div class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"></div>
-                    </div>
-                    <div class="flex-1 overflow-hidden">
-                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
-                        New project "KWD Dashboard" created
-                      </h5>
-                      <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                        Looks like there might be a new theme soon
-                      </p>
-                      <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 9h ago </span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="block">
-                  <div class="flex px-4 space-x-4">
-                    <div class="relative flex-shrink-0">
-                      <span
-                        class="inline-block p-2 overflow-visible rounded-full bg-primary-50 text-primary-light dark:bg-primary-darker"
-                      >
-                        <svg
-                          class="w-7 h-7"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                          />
-                        </svg>
-                      </span>
-                      <div class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"></div>
-                    </div>
-                    <div class="flex-1 overflow-hidden">
-                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
-                        KWD Dashboard v0.0.2 was released
-                      </h5>
-                      <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                        Successful new version was released
-                      </p>
-                      <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 2d ago </span>
-                    </div>
-                  </div>
-                </a>
-                <template x-for="i in 20" x-key="i">
-                  <a href="#" class="block">
-                    <div class="flex px-4 space-x-4">
-                      <div class="relative flex-shrink-0">
-                        <span
-                          class="inline-block p-2 overflow-visible rounded-full bg-primary-50 text-primary-light dark:bg-primary-darker"
-                        >
-                          <svg
-                            class="w-7 h-7"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                            />
-                          </svg>
-                        </span>
-                        <div
-                          class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"
-                        ></div>
-                      </div>
-                      <div class="flex-1 overflow-hidden">
-                        <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
-                          New project "KWD Dashboard" created
-                        </h5>
-                        <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                          Looks like there might be a new theme soon
-                        </p>
-                        <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 9h ago </span>
-                      </div>
-                    </div>
-                  </a>
-                </template>
+                <p class="px-4">Action tab content</p>
+                <!--  -->
+                <!-- Action tab content -->
+                <!--  -->
               </div>
 
               <!-- User tab -->
               <div class="space-y-4" x-show.transition.in="activeTabe == 'user'">
-                <a href="#" class="block">
-                  <div class="flex px-4 space-x-4">
-                    <div class="relative flex-shrink-0">
-                      <span class="relative z-10 inline-block overflow-visible rounded-ful">
-                        <img
-                          class="object-cover rounded-full w-9 h-9"
-                          src="build/images/avatar.jpg"
-                          alt="Ahmed kamel"
-                        />
-                      </span>
-                      <div class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"></div>
-                    </div>
-                    <div class="flex-1 overflow-hidden">
-                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h5>
-                      <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                        Shared new project "K-WD Dashboard"
-                      </p>
-                      <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 1d ago </span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="block">
-                  <div class="flex px-4 space-x-4">
-                    <div class="relative flex-shrink-0">
-                      <span class="relative z-10 inline-block overflow-visible rounded-ful">
-                        <img
-                          class="object-cover rounded-full w-9 h-9"
-                          src="build/images/avatar-1.jpg"
-                          alt="Ahmed kamel"
-                        />
-                      </span>
-                      <div class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"></div>
-                    </div>
-                    <div class="flex-1 overflow-hidden">
-                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">John</h5>
-                      <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                        Commit new changes to K-WD Dashboard project.
-                      </p>
-                      <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 10h ago </span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="block">
-                  <div class="flex px-4 space-x-4">
-                    <div class="relative flex-shrink-0">
-                      <span class="relative z-10 inline-block overflow-visible rounded-ful">
-                        <img
-                          class="object-cover rounded-full w-9 h-9"
-                          src="build/images/avatar.jpg"
-                          alt="Ahmed kamel"
-                        />
-                      </span>
-                      <div class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"></div>
-                    </div>
-                    <div class="flex-1 overflow-hidden">
-                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h5>
-                      <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                        Release new version "K-WD Dashboard"
-                      </p>
-                      <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 20d ago </span>
-                    </div>
-                  </div>
-                </a>
-                <template x-for="i in 10" x-key="i">
-                  <a href="#" class="block">
-                    <div class="flex px-4 space-x-4">
-                      <div class="relative flex-shrink-0">
-                        <span class="relative z-10 inline-block overflow-visible rounded-ful">
-                          <img
-                            class="object-cover rounded-full w-9 h-9"
-                            src="build/images/avatar.jpg"
-                            alt="Ahmed kamel"
-                          />
-                        </span>
-                        <div
-                          class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"
-                        ></div>
-                      </div>
-                      <div class="flex-1 overflow-hidden">
-                        <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h5>
-                        <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                          Release new version "K-WD Dashboard"
-                        </p>
-                        <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> 20d ago </span>
-                      </div>
-                    </div>
-                  </a>
-                </template>
+                <p class="px-4">User tab content</p>
+                <!--  -->
+                <!-- User tab content -->
+                <!--  -->
               </div>
             </div>
           </div>
@@ -2104,72 +1379,22 @@
             <!-- Panel content (Search result) -->
             <div class="flex-1 px-4 pb-4 space-y-4 overflow-y-hidden h hover:overflow-y-auto">
               <h3 class="py-2 text-sm font-semibold text-gray-600 dark:text-light">History</h3>
-              <a href="#" class="flex space-x-4">
-                <div class="flex-shrink-0">
-                  <img class="w-10 h-10 rounded-lg" src="build/images/cover.jpg" alt="Post cover" />
-                </div>
-                <div class="flex-1 max-w-xs overflow-hidden">
-                  <h4 class="text-sm font-semibold text-gray-600 dark:text-light">Header</h4>
-                  <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                    Lorem ipsum dolor, sit amet consectetur.
-                  </p>
-                  <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> Post </span>
-                </div>
-              </a>
-              <a href="#" class="flex space-x-4">
-                <div class="flex-shrink-0">
-                  <img class="w-10 h-10 rounded-lg" src="build/images/avatar.jpg" alt="Ahmed Kamel" />
-                </div>
-                <div class="flex-1 max-w-xs overflow-hidden">
-                  <h4 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h4>
-                  <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                    Last activity 3h ago.
-                  </p>
-                  <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> Offline </span>
-                </div>
-              </a>
-              <a href="#" class="flex space-x-4">
-                <div class="flex-shrink-0">
-                  <img class="w-10 h-10 rounded-lg" src="build/images/cover-2.jpg" alt="K-WD Dashboard" />
-                </div>
-                <div class="flex-1 max-w-xs overflow-hidden">
-                  <h4 class="text-sm font-semibold text-gray-600 dark:text-light">K-WD Dashboard</h4>
-                  <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </p>
-                  <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> Updated 3h ago. </span>
-                </div>
-              </a>
-              <template x-for="i in 10" x-key="i">
-                <a href="#" class="flex space-x-4">
-                  <div class="flex-shrink-0">
-                    <img class="w-10 h-10 rounded-lg" src="build/images/cover-3.jpg" alt="K-WD Dashboard" />
-                  </div>
-                  <div class="flex-1 max-w-xs overflow-hidden">
-                    <h4 class="text-sm font-semibold text-gray-600 dark:text-light">K-WD Dashboard</h4>
-                    <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </p>
-                    <span class="text-sm font-normal text-gray-400 dark:text-primary-light"> Updated 3h ago. </span>
-                  </div>
-                </a>
-              </template>
+              <p class="px=4">Search resault</p>
+              <!--  -->
+              <!-- Search content -->
+              <!--  -->
             </div>
           </div>
         </section>
       </div>
     </div>
-
     <!-- All javascript code in this project for now is just for demo DON'T RELY ON IT  -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.min.js"></script>
-    <script src="build/js/script.js"></script>
     <script>
       const setup = () => {
         const getTheme = () => {
           if (window.localStorage.getItem('dark')) {
             return JSON.parse(window.localStorage.getItem('dark'))
           }
-
           return !!window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         }
 
@@ -2195,47 +1420,13 @@
           root.style.setProperty('--color-primary-darker', `var(--color-${color}-darker)`)
           this.selectedColor = color
           window.localStorage.setItem('color', color)
-          //
-        }
-
-        const updateBarChart = (on) => {
-          const data = {
-            data: randomData(),
-            backgroundColor: 'rgb(207, 250, 254)',
-          }
-          if (on) {
-            barChart.data.datasets.push(data)
-            barChart.update()
-          } else {
-            barChart.data.datasets.splice(1)
-            barChart.update()
-          }
-        }
-
-        const updateDoughnutChart = (on) => {
-          const data = random()
-          const color = 'rgb(207, 250, 254)'
-          if (on) {
-            doughnutChart.data.labels.unshift('Seb')
-            doughnutChart.data.datasets[0].data.unshift(data)
-            doughnutChart.data.datasets[0].backgroundColor.unshift(color)
-            doughnutChart.update()
-          } else {
-            doughnutChart.data.labels.splice(0, 1)
-            doughnutChart.data.datasets[0].data.splice(0, 1)
-            doughnutChart.data.datasets[0].backgroundColor.splice(0, 1)
-            doughnutChart.update()
-          }
-        }
-
-        const updateLineChart = () => {
-          lineChart.data.datasets[0].data.reverse()
-          lineChart.update()
         }
 
         return {
           loading: true,
           isDark: getTheme(),
+          color: getColor(),
+          selectedColor: 'cyan',
           toggleTheme() {
             this.isDark = !this.isDark
             setTheme(this.isDark)
@@ -2248,8 +1439,6 @@
             this.isDark = true
             setTheme(this.isDark)
           },
-          color: getColor(),
-          selectedColor: 'cyan',
           setColors,
           toggleSidbarMenu() {
             this.isSidebarOpen = !this.isSidebarOpen
@@ -2289,9 +1478,6 @@
               this.$refs.mobileMainMenu.focus()
             })
           },
-          updateBarChart,
-          updateDoughnutChart,
-          updateLineChart,
         }
       }
     </script>

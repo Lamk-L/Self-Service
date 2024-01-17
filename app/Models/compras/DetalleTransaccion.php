@@ -9,6 +9,7 @@ class DetalleTransaccion extends Model
 {
     use HasFactory;
     protected $table = 'detalle_transaccion';
+    protected $primaryKey = 'IdDetalle';
     public $timestamps=false;
     protected $fillable = ['IdTransaccion', 'IdProducto', 'Cantidad',
      'PrecioUnidad'];
