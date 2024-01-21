@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Self-Service</title>
+    <title>@yield('titulo')</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
@@ -109,7 +109,7 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                       />
                     </svg>
                   </span>
@@ -160,8 +160,7 @@
                   aria-haspopup="true"
                   :aria-expanded="(open || isActive) ? 'true' : 'false'"
                 >
-                  <span aria-hidden="true">
-                    <svg
+                <svg
                       class="w-5 h-5"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -172,10 +171,10 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                        d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
                       />
                     </svg>
-                  </span>
+                  
                   <span class="ml-2 text-sm"> Calidad </span>
                   <span aria-hidden="true" class="ml-auto">
                     <!-- active class 'rotate-180' -->
@@ -195,11 +194,22 @@
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a
-                    href="../pages/blank.html"
+                    href="{{route('noconformidad.index')}}"
                     role="menuitem"
                     class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
                   >
                   Registrar No Conformidad
+                  </a>
+                </div>
+                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" arial-label="Pages">
+                  <!-- active & hover classes 'text-gray-700 dark:text-light' -->
+                  <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                  <a
+                    href="{{route('accioncorrectiva.index')}}"
+                    role="menuitem"
+                    class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
+                  >
+                  Acciones Correctivas
                   </a>
                 </div>
               </div>
@@ -828,6 +838,17 @@
                       class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
                     >
                       Registrar No Conformidad
+                    </a>
+                  </div>
+                  <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" arial-label="Pages">
+                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
+                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                    <a
+                      href="../pages/blank.html"
+                      role="menuitem"
+                      class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700"
+                    >
+                      Acciones Correctivas
                     </a>
                   </div>
                 </div>

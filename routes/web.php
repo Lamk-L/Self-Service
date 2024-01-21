@@ -6,6 +6,8 @@ use App\Http\Controllers\compras\MarcaController;
 use App\Http\Controllers\compras\ProductoController;
 use App\Http\Controllers\compras\SubGrupoController;
 use App\Http\Controllers\compras\UnidadMedidaController;
+use App\Http\Controllers\calidad\AccionCorrectivaController;
+use App\Http\Controllers\calidad\NoConformidadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -58,3 +60,16 @@ Route::get('cancelarcp',function(){
 Route::resource('comprar',CompraController::class);
 
 
+/* No Conformidad */
+Route::resource('noconformidad',NoConformidadController::class);
+Route::get('noconformidad/{id}/confirmar',[NoConformidadController::class,'confirmar'])->name('noconformidad.confirmar');
+Route::get('cancelarnc',function(){
+    return redirect()->route('noconformidad.index')->with('datos','Acción Cancelada ...!');
+})->name('cancelarnc');
+
+/*Accion correctiva*/
+Route::resource('accioncorrectiva',AccionCorrectivaController::class);
+Route::get('accioncorrectiva/{id}/confirmar',[AccionCorrectivaController::class,'confirmar'])->name('accioncorrectiva.confirmar');
+Route::get('cancelarac',function(){
+    return redirect()->route('accioncorrectiva.index')->with('datos','Acción Cancelada ...!');
+})->name('cancelarac');
