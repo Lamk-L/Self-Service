@@ -33,7 +33,7 @@ class NoConformidadController extends Controller
         $NoConformidad->Fecha = $request->Fecha;
         $NoConformidad->Estado = '1';
         $NoConformidad->save();
-        return redirect()->route('NoConformidad.index')->with('datos','Registro Guardado.');   
+        return redirect()->route('noconformidad.index')->with('datos','Registro Guardado.');   
     }
 
     public function edit($id)
@@ -55,7 +55,7 @@ class NoConformidadController extends Controller
         $NoConformidad->Descripcion = $request->Descripcion;
         $NoConformidad->Fecha = $request->Fecha;
         $NoConformidad->save();
-        return redirect()->route('NoConformidad.index')->with('datos','Registro Actualizado.');
+        return redirect()->route('noconformidad.index')->with('datos','Registro Actualizado.');
     }
 
     public function confirmar($id){
@@ -67,6 +67,6 @@ class NoConformidadController extends Controller
         $NoConformidad = NoConformidad::findOrFail($id);
         $NoConformidad->Estado = '0';
         $NoConformidad->save();
-        return redirect()->route('NoConformidad.index')->with('datos','Registro eliminado.');
+        return redirect()->route('noconformidad.index')->with('datos','Registro eliminado.');
     }
 }

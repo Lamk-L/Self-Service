@@ -17,12 +17,7 @@
                 </a>
             </div>
         
-            <!-- Segundo elemento: Botón 'Generar PDF' -->
-            <div class="px-4 py-3">
-                <a href="{{ route('accioncorrectiva.create') }}">
-                    <button type="submit" class="px-2 py-1 text-sm font-medium text-white transition-colors duration-200 rounded-md bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 dark:focus:ring-offset-darker">Generar PDF</button>
-                </a>
-            </div>
+            
         
             <!-- Tercer elemento: Barra de búsqueda -->
             <div class="px-4 py-3">
